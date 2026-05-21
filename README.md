@@ -61,7 +61,7 @@ lung-sound-classifier/
 - **Fine-tuning:** Layers unfrozen from `features.4` onward
 - **Classifier head:** `Dropout(0.4)` → `Linear(1280 → 9)`
 - **Loss:** CrossEntropyLoss with label smoothing (0.1)
-- **Optimizer:** AdamW — lr = 1e-4, weight_decay = 1e-4
+- **Optimizer:** AdamW_lr = 1e-4, weight_decay = 1e-4
 - **Scheduler:** CosineAnnealingLR over 70 epochs
 - **Training split:** 75% train / 15% val / 10% test
 
