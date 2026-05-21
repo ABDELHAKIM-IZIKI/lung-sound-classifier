@@ -47,7 +47,7 @@ lung-sound-classifier/
 |------|-------------|
 | 1 | Load MP3 → resample to 22 050 Hz → WAV |
 | 2 | Pre-emphasis (α = 0.97) + normalization |
-| 3 | Segment audio into 10-second clips |
+| 3 | Segment audio into 20-second clips |
 | 4 | Compute STFT (n_fft = 512, Hamming window) |
 | 5 | Generate 128-band Mel spectrogram → PNG |
 | 6 | Run EfficientNet-B0 on each spectrogram |
